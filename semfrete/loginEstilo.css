@@ -1,0 +1,1722 @@
+@charset "UTF-8";
+@media only screen and (min-width: 940px) {
+    body {
+        background: #f6f6f6;
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        width: calc(100vw - 17px);
+    }
+    
+    .esqueceuSenha {
+        margin: 12px;
+        color: #111;
+        text-decoration: none;
+    }
+    
+    .login {
+        width: 450px;
+        margin: 16px auto;
+        font-size: 16px;
+        position: relative;
+        top: 150px;
+    }
+    
+    /* Reset top and bottom margins from certain elements */
+    .login-header,
+    .login p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    /* The triangle form is achieved by a CSS hack */
+    .login-triangle {
+        width: 0;
+        margin-right: auto;
+        margin-left: auto;
+        border: 12px solid transparent;
+        border-bottom-color: #211D12;
+    }
+    
+    .login-header {
+        background: #211D12;
+        padding: 20px;
+        font-size: 1.4em;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    .login-container {
+        background: #f1f1f1;
+        padding: 12px;
+        margin-bottom: 70px;
+        border: 2px solid;
+        border-color: #211D12;
+    }
+    
+    /* Every row inside .login-container is defined with p tags */
+    .login p {
+        padding: 12px;
+    }
+    
+    .login input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+    }
+    
+    .login input, input#busca {
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+    
+    /* Text fields' focus effect */
+    .login input:focus, input#busca:focus {
+        border-color: #888;
+    }
+    
+    .login input[type="submit"] {
+        background: #211D12;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .login input[type="submit"]:hover {
+        background: #888;
+    }
+    
+    /* Buttons' focus effect */
+    .login input[type="submit"]:focus {
+        border-color: #05a;
+    }
+    
+    .erroLogin {
+        width: 450px;
+        resize: none;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        margin-top: 5px;
+        font-size: 14px;
+        color: red;
+        padding: 0;
+    }
+    
+    
+    
+    
+    
+    
+    input#busca {
+        box-sizing: border-box; 
+        border-width: 1px;
+        border-style: solid;
+        padding-left: 10px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 16px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 450px;       
+    }
+    
+    button#submitBusca {
+        vertical-align: top;
+        height: 40px;
+        cursor: pointer;
+        border-width: 0px;
+        color: black;
+        background-color: #dde2e3;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .mostraAnuncio {
+        width: 283px;
+        height: 212.25px;
+        border: none;
+        padding: 0;
+        background: none;
+        cursor: pointer;
+    }
+    
+    .imgListaAnuncio {
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #4c515b;
+        text-align: center;
+        height: 60px;
+        width: calc(100vw - 17px);
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    .headerBotao {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 19px 16px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .headerBotao:hover {
+        background-color: #333;
+    }
+    
+    .headerFundo {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        background-color: #333;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+    
+    
+    
+    
+    
+    /*----------------------- */
+    /* Postar um novo anúncio */
+    /*------------------------*/
+    
+    .mainNovoAnuncio {
+        width: 619px;
+        margin: auto;
+        font-size: 16px;
+        position: relative;
+        margin-top: 70px;
+    }
+    
+    .mainNovoAnuncio p {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+    }
+    
+    .mainNovoAnuncio input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+    }
+    
+    .mainNovoAnuncio input {
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+    
+    /* Text fields' focus effect */
+    .mainNovoAnuncio input:focus {
+        border-color: #888;
+    }
+    
+    .mainNovoAnuncio input[type="submit"] {
+        background: #211D12;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        width: 287px;
+    }
+    
+    .mainNovoAnuncio input[type="submit"]:hover {
+        background: #888;
+    }
+    
+    .mainNovoAnuncio input[type="submit"]:focus {
+        border-color: #05a;
+    }
+    
+    .erroAnuncio {
+        width: 570px;
+        resize: none;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        font-size: 14px;
+        color: red;
+        padding: 6px; 
+    }
+    
+    .descricao {
+        background-color: white;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border: 1px solid #bbb;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+        resize: none;
+    }
+    
+    
+    
+    
+    
+    /*-----------------------------*/
+    /* Após postar um novo anúncio */
+    /*-----------------------------*/
+    
+    .mainPostado {
+        width: 700px;
+        margin: 16px auto;
+        font-size: 16px;
+        position: relative;
+        top: 150px;
+    }
+    
+    .postado-container {
+        background: white;
+        padding: 12px;
+        border: 2px solid;
+        border-color: #211D12;
+    }
+    
+    .postadoBotoes {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+    }
+    
+    .postado {
+        text-align: center;
+        font-size: 18px;
+        margin: 20px;
+    }
+    
+    .mainPostado input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+    
+    .mainPostado input:focus {
+        border-color: #888;
+    }
+    
+    .mainPostado input[type="submit"] {
+        background: #211D12;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        width: 217px;
+    }
+    
+    .mainPostado input[type="submit"]:hover {
+        background: #888;
+    }
+    
+    .mainPostado input[type="submit"]:focus {
+        border-color: #05a;
+    }
+    
+    .mainPostado a {
+        text-decoration: none;
+    }
+    
+    
+    
+    /*---------------------------------*/
+    /* Exibir lista de anúncios gerais */
+    /*---------------------------------*/
+    
+    .main {
+        margin: auto;
+        background-color: transparent;
+        width: 1156px;
+        margin-top: 70px;
+        padding: 0;
+    }
+    
+    div#listaPrincipalAnuncio {
+        display: inline-block;
+        background-color: transparent;
+        margin-bottom: 60px;
+        width: 906px;
+    }
+    
+    aside#filtrosLateral {
+        margin-top: 100px;
+        display: block;
+        width: 250px;
+        float: left;
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .botoesPrecoOrdem {
+        color: #4D4D4D;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 13px;
+        padding-left: 5px;
+        border: none;
+        margin: 0;
+        cursor: pointer;
+        outline: 0;
+        font-weight: bold;
+    }
+    
+    .botoesPrecoOrdemClick {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 13px;
+        border: none;
+        border-left: 3px solid #2890f0;
+        padding-left: 2px;
+        margin: 0;
+        cursor: pointer;
+        outline: 0;
+        font-weight: bold;
+    }
+    
+    .categoriasLateral {
+        color: #4D4D4D;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 13px;
+        padding-left: 5px;
+    }
+    
+    .categoriasLateral:hover , .botoesPrecoOrdem:hover{
+        color: black;
+        cursor: pointer;
+    }
+    
+    .click {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 13px;
+        border-left: 3px solid #2890f0;
+        padding-left: 2px;
+    }
+    
+    .filtrosLaterais {
+        background-color: transparent;
+        font-size: 16px;
+        color: #4D4D4D;
+        margin-bottom: 10px;
+        margin-top: 35px;
+        padding-left: 5px;
+    }
+    
+    .precoRange {
+        margin-top: 4px;
+        width: 61px;
+    }
+    .precoRangeEspaco{
+        background-color: transparent;
+        margin-left: 3px;
+    }
+    
+    .divListaAnuncio {
+        display: inline-block;
+        background-color: white;
+        width: 283px;
+        height: 378.25px;
+        margin: 8.5px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .listaAnuncio {
+        height: 212.25px;
+        width: 283px;
+    }
+    
+    .divListaAnuncio:hover {
+        box-shadow: 0 4px 8px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 8px rgba(0, 0, 0, 0.19);
+    }
+    
+    .divSub {
+        background-color: transparent;
+        height: 141px;
+        padding: 10px;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: grey;
+    }
+    
+    .listaPreco {
+        resize: none;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        font-size: 20px;
+        color: #4D4D4D;
+    }
+    
+    .listaTitulo {
+        resize: none;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        font-size: 14px;
+        color: #717171;
+    }
+    
+    .paginasNum {
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .divPaginasNum {
+        background-color: transparent;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .pagina {
+        display: inline-block;
+        background-color: transparent;
+        margin: 1px; 
+    }
+    
+    .paginaLink {
+        background-color: white;
+        text-decoration: none;
+        color: #a1a1a1;
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        vertical-align: middle;
+        line-height: 36px;
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+    }
+    
+    .paginaLink:hover {
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+        background-color: #eeeeee;
+    }
+    
+    .paginaLinkClick {
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        vertical-align: middle;
+        line-height: 36px;
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+        pointer-events: none;
+        cursor: default;
+    }
+    .erroPrecoRange {
+        resize: none;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        font-size: 14px;
+        color: red;
+    }
+    
+    
+    
+    
+    
+    /*----------------*/
+    /* Exibir anúncio */
+    /*----------------*/
+    
+    
+    .mainExibirAnuncio {
+        margin: auto;
+        background-color: white;
+        width: 967px;
+        padding: 35px;
+        margin-top: 80px;
+        border: solid 1px #c1c1c1;
+    }
+    
+    .topExibirAnuncio {
+        display: inline-block;
+        background-color: transparent;
+    }
+    
+    .exibirTitulo {
+        display: inline-block;
+        background-color: transparent;
+        color: #414141;
+        border: none;
+        padding: 0;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        width: 602px;
+    }
+    
+    .titulo {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .data {
+        padding: 0;
+        margin: 0;
+        font-size: 11px;
+    }
+    
+    .exibirPreco {
+        display: inline-block;
+        background-color: #c1c1c1;
+        color: white;
+        width: 330px;
+        height: 42px;
+        margin-left: 30px;
+        vertical-align: top;
+        text-align: center;
+        padding-top: 12px;
+        font-size: 30px;
+    }
+    
+    .midExibirAnuncio {
+        background-color: transparent;
+    }
+    
+    .exibirDivImgMaior {
+        width: 600px;
+        height: 450px;
+        background-color: transparent;
+        margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        border: solid 1px #c1c1c1;
+    }
+    
+    .exibirImgMaior { 
+        max-width: 600px; 
+        max-height: 450px;
+        vertical-align: top;
+        padding-bottom: 0;
+    }
+    
+    .contato {
+        background-color: transparent;
+        display: inline-block;
+        width: 298px;
+        padding: 15px;
+        text-align: center;
+        margin-left: 30px;
+        vertical-align: top;
+        font-size: 18px;
+        border: solid 1px #c1c1c1;
+    }
+    
+    .exibirDivImgMenor {
+        width: 80px;
+        height: 60px;
+        background-color: transparent;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .exibirImgMenor {
+        max-width: 100%; 
+        max-height: 100%;
+    }
+    
+    .botaoInvisivel.sBorda {
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 1px;
+        padding: 1px;
+    }
+    
+    .botaoInvisivel.cBorda {
+        border: solid 1px #ff9900;
+        margin-top: 9px;
+        margin-right: 9px;
+        padding: 1px;
+    }
+    
+    .botaoHidden {
+        display: none;
+    }
+    
+    .botExibirAnuncio {
+        background-color: transparent;
+        margin-top: 25px;
+    }
+    
+    .exibirPrecoMenor {
+        vertical-align: top;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+        padding-left: 0;
+        margin: 0;
+        color: #414141;
+        width: 590px;
+        
+        font-size: 20px;
+    }
+    
+    .exibirDescricao {
+        vertical-align: top;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        padding-bottom: 30px;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: #414141;
+        width: 590px;
+        font-size: 16px;
+        border-bottom: solid 1px #c1c1c1;
+    }
+    
+    .exibirDescricao.categoria {
+        border: none;
+    }
+    
+    
+    
+    
+    
+    /*--------------------------------------------------*/
+    /* Lista de anúncios do usuário logado, para edição */
+    /*--------------------------------------------------*/
+    
+    .mainMeuAnuncio {
+        margin: auto;
+        background-color: transparent;
+        width: 685px;
+        margin-top: 80px;
+        padding: 0;
+        margin-bottom: 115px;
+    }
+    
+    .meuAnuncio {
+        background: white;
+        padding: 12px;
+        border: 2px solid;
+        border-color: #211D12;
+    }
+    
+    .meuAnuncio p {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    
+    .meuAnuncio input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+    .meuAnuncio h1 {
+        font-size: 32px;
+    }
+    
+    .meuAnuncio input:focus {
+        border-color: #888;
+    }
+    
+    .meuAnuncio input[type="submit"] {
+        background: #211D12;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        width: 326px;
+    }
+    
+    .meuAnuncio input[type="submit"]:hover {
+        background: #888;
+    }
+    
+    .meuAnuncio input[type="submit"]:focus {
+        border-color: #05a;
+    }
+    
+    .divImgMaior {
+        display: inline-block;
+        width: 326px;
+        height: 245px;
+        background-color: transparent;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .imgMaior {
+        height: auto; 
+        width: auto; 
+        max-width: 326px; 
+        max-height: 245px;
+        margin: 0;
+    }
+    
+    .listaEditarAnuncio {
+        resize: none;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+        color: #414141;
+        height: 125px;
+    }
+    
+    .precoTitulo {
+        display: inline-block;
+        vertical-align: top;
+        width: 326px;
+        height: 245px;
+        background-color: transparent;  
+    }
+    
+    .meuAnuncio h2 {
+        font-size: 13px;
+        background-color: transparent;
+        margin-top: 56px;
+    }
+    
+    
+    
+    
+    
+    /*----------------------------------------------*/
+    /* Interface para edição do anúncio selecionado */
+    /*----------------------------------------------*/
+    
+    .mainEditarAnuncio {
+        margin: 16px auto;
+        font-size: 16px;
+        position: relative;
+        background-color: white;
+        width: 1027.5px;
+        margin-top: 20px;
+        padding: 0;
+        border: 1px solid #c1c1c1;
+    }
+    
+    .editar-container {
+        background: #f1f1f1;
+        padding: 12px;
+        margin: 0;
+        border: 2px solid;
+        border-color: #211D12;
+    }
+    
+    .mainEditarAnuncio p.sPadding {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mainEditarAnuncio p {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+    }
+    
+    .mainEditarAnuncio input, .mainEditarAnuncio label, .mainEditarAnuncio button {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+    
+    .mainEditarAnuncio label {
+        text-align: center;
+    }
+    
+    .mainEditarAnuncio input:focus, .mainEditarAnuncio label:focus, .mainEditarAnuncio button:focus {
+        border-color: #888;
+    }
+    
+    .mainEditarAnuncio input[type="submit"], .mainEditarAnuncio label, .mainEditarAnuncio button {
+        background: #211D12;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        width: 491.25px;
+    }
+    
+    .mainEditarAnuncio label, .mainEditarAnuncio button {
+        display: inline-block;
+        width: 160.6px;
+    }
+    
+    .imgEditarAnuncio.paddingL {
+        padding-left: 6px;
+    }
+    
+    .mainEditarAnuncio input[type="submit"]:hover, .mainEditarAnuncio label:hover, .mainEditarAnuncio button:hover {
+        background: #888;
+    }
+    
+    .mainEditarAnuncio input[type="submit"]:focus, .mainEditarAnuncio label:focus, .mainEditarAnuncio button:hover {
+        border-color: #05a;
+    }
+    
+    .editarOpcoes {
+       border: none;
+       height: 29px;
+       overflow: hidden;
+       width: 491.5px;
+       background-color: #e4e4e4;
+       margin: 0;
+    }
+    
+    .imgEditarAnuncio {
+        display: inline-block;
+        background-color: transparent;
+        width: 326px;
+        margin-bottom: 10px;
+    }
+    
+    .imgEditarAnuncio.margem {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    
+    
+    
+    
+    
+    /*--------------------------------------------------*/
+    /* Formulário de opinião antes de apagar um anúncio */
+    /*--------------------------------------------------*/
+    
+    .mainApagarAnuncio {
+        font-size: 16px;
+        position: relative;
+        margin: auto;
+        background-color: transparent;
+        width: 580px;
+        margin-top: 70px;
+        padding: 0;
+        border: 1px solid #c1c1c1;  
+    }
+    
+    .mainApagarAnuncio p {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+    }
+    
+    .mainApagarAnuncio p.sPadding {
+        padding: 0;
+        margin: 0;
+        margin-top: 6px;
+    }
+    
+    .mainApagarAnuncio input {
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+    
+    .mainApagarAnuncio input:focus{
+        border-color: #888;
+    }
+    
+    .mainApagarAnuncio input[type="submit"],  .mainApagarAnuncio button {
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+        background: #211D12;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        width: 267.7px;
+    }
+    
+    .mainApagarAnuncio input.botoesAgradecimento {
+       width: 177.1px; 
+    }
+    
+    .mainApagarAnuncio input[type="submit"]:hover, .mainApagarAnuncio button:hover {
+        background: #888;
+    }
+    
+    .mainApagarAnuncio input[type="submit"]:focus .mainApagarAnuncio button:focus {
+        border-color: #05a;
+    }
+    
+    .comentario {
+        background-color: white;
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #bbb;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+        resize: none;
+    }
+    
+    .descricao.sBorda {
+        background-color: white;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border:none;
+        padding: 0;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+        resize: none;
+    }
+    .checkboxApagar {
+        vertical-align: top;
+        resize: none;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        padding: 6px;
+        margin: 0;
+        font-size: 0.95em;
+        color: #414141;
+    }
+    
+    .bordaInterna {
+        border: 1px solid #bbb;
+        background-color: white;
+        padding: 16px;
+    }
+    
+    output#avaliacaoSaida {
+        margin-left: 20px;
+    }
+    
+    
+    
+    
+    
+    /*--------------------------------------*/
+    /* Agradecimento após apagar um anúncio */
+    /*--------------------------------------*/
+    
+    .checkboxApagar.agradecimento {
+        text-align: center;
+        margin: 0;
+        background: white;
+        padding: 12px;
+        border: 2px solid;
+        border-color: #211D12;
+    }
+    
+    .muitoObrigado {
+        font-size: 20px;
+    }
+    
+    .h2Padrao {
+        margin: 0;
+        margin-top: 4px;
+        font-size: 16px;
+        background-color: transparent;
+    }
+    
+    .descricao.agradecimento {
+        padding: 6px;
+        border: none;
+        background-color: transparent;
+    }
+    
+    
+    
+    
+    
+    /*---------------------------------*/
+    /* Formulário para resetar a senha */
+    /*---------------------------------*/
+    
+    .mainReset {
+        width: 300px;
+        margin: 16px auto;
+        font-size: 16px;
+        position: relative;
+        top: 150px;
+    }
+    
+    .erroResetSenha {
+        width: 390px;
+        resize: none;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        font-size: 14px;
+        color: red;
+        padding-top: 12px; 
+    }
+    
+    .mainReset input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+        text-align: center;
+    }
+    
+    .mainReset button {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+    
+    .mainReset button:focus {
+        border-color: #888;
+    }
+    
+    .mainReset button[type="submit"] {
+        background: #211D12;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        width: 217px;
+    }
+    
+    .mainReset button[type="submit"]:hover {
+        background: #888;
+    }
+    
+    .mainReset button[type="button"]:focus {
+        border-color: #05a;
+    }
+    
+    .mainReset p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .mainReset p {
+        padding: 6px;
+    }
+    
+    .pCentralizado{
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+    /*-------------------------------------*/
+    /* Formulário para cadastro de usuário */
+    /*-------------------------------------*/
+    
+    .mainNovoAnuncio.cadastro {
+        width: 450px;
+    }
+    
+    .mainNovoAnuncio p.sPadding {
+        padding: 0;
+        margin: 0;
+        margin-top: 6px;
+    }
+    
+    .botaoInvisivel {
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        outline: 0;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0; 
+    }
+    
+    .opcoes {
+       border: none;
+       height: 29px;
+       overflow: hidden;
+       width: 287px;
+       background-color: #e4e4e4;
+       margin: 0;
+    }
+    
+    .opcoes select {
+       background-color: #e4e4e4;
+       border: none;
+       font-size: 14px;
+       height: 29px;
+       padding: 5px;
+       width: 290px;
+    }
+    
+    
+    
+    
+    
+    /*------------------------------------*/
+    /* Formulário para edição de cadastro */
+    /*------------------------------------*/
+    
+    .mainEditarCadastro {
+        width: 450px;
+        margin: auto;
+        font-size: 16px;
+        position: relative;
+        margin-top: 70px;
+    }
+    
+    .mainEditarCadastro p {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 6px;
+    }
+    
+    .mainEditarCadastroInput {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+    }
+    
+    .mainEditarCadastro input {
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+    
+    /* Text fields' focus effect */
+    .mainEditarCadastro input:focus {
+        border-color: #888;
+    }
+    
+    .mainEditarCadastro input[type="submit"] {
+        background: #211D12;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        width: 287px;
+    }
+    
+    .mainEditarCadastro input[type="submit"]:hover {
+        background: #888;
+    }
+    
+    .mainEditarCadastro input[type="submit"]:focus {
+        border-color: #05a;
+    }
+    
+    .h1EditarCadastro {
+        padding: 6px;
+        margin: 0;
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    
+    .mainEditarCadastro input[type="radio"] {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 20px;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+    }
+    
+    
+    
+    
+    
+    /*--------------------------*/
+    /* Rodapé e link de contato */
+    /*--------------------------*/
+    
+    .footer {
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        overflow: hidden;
+        background-color: #4c515b;
+        text-align: center;
+        height: 60px;
+        width: calc(100vw - 17px);
+    }
+    
+    .feedback {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+        width: 350px;
+    }
+    
+    .feedback:hover {
+        text-decoration: underline;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .dropbtn {
+        background-color: #2890f0;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        min-width: 160px;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #4c515b;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #111}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #0d66ba;
+    }
+    
+    
+    
+    
+    .float-right {
+        float: right;
+        padding-right: 4px;
+        margin-top: 5px;
+    }
+    
+    .headerDesktop {
+        margin: auto;
+        max-width: 1135px;
+        padding: 0;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 939px) {
+    body {
+        background: #f6f6f6;
+        font-family: 'Open Sans', sans-serif;
+        margin: auto;
+        max-width: 360px;
+    }
+        
+    .login {
+        width: 95%;
+        margin: 16px auto;
+        font-size: 16px;
+        position: relative;
+        top: 50px;
+    }
+     
+    /* Reset top and bottom margins from certain elements */
+    .login-header,
+    .login p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+     
+    /* The triangle form is achieved by a CSS hack */
+    .login-triangle {
+        width: 0;
+        margin-right: auto;
+        margin-left: auto;
+        border: 12px solid transparent;
+        border-bottom-color: #211D12;
+    }
+     
+    .login-header {
+        background: #211D12;
+        padding: 20px;
+        font-size: 1.4em;
+        font-weight: normal;
+        text-align: center;
+        txt-transform: uppercase;
+        color: #fff;
+    } 
+      
+    .login-container {
+        background: #f1f1f1;
+        padding: 12px;
+        margin-bottom: 70px;
+        border: 2px solid;
+        border-color: #211D12;
+    }
+     
+    /* Every row inside .login-container is defined with p tags */
+    .login p {
+        padding: 12px;
+    }
+     
+    .login input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 16px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.95em;
+    }
+     
+    .login input, input#busca {
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+     
+    /* Text fields' focus effect */
+    .login input:focus, input#busca:focus {
+        border-color: #888;
+    }
+     
+    .login input[type="submit"] {
+        background: #211D12;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+     
+    .login input[type="submit"]:hover {
+        background: #888;
+    }
+     
+    /* Buttons' focus effect */
+    .login input[type="submit"]:focus {
+        border-color: #05a;
+    }
+     
+    .erroLogin {
+        width: 450px;
+        resize: none;
+        overflow: auto;
+        background-color: transparent;
+        border: none;
+        margin-top: 5px;
+        font-size: 14px;
+        color: red;
+        padding: 0;
+    }
+     
+    .esqueceuSenha {
+        margin: 12px;
+        color: #111;
+        text-decoration: none;
+    }
+    
+    
+    
+    
+    
+    #headerParent{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    #headerBusca {
+        order: 2;
+        padding: 0;
+    }
+    #headerBotoes {
+        order: 1;
+        padding: 0;
+    }
+    #header1 {
+        width: 100%;
+    }
+    #headerBtn1, #headerBtn2, #headerBtn3 {
+        width: 100%;
+        max-width: 118px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    .header {
+        position: fixed;
+        top: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #4c515b;
+        text-align: center;
+        width: 100%;
+        max-width: 360px;
+    }
+        
+    li {
+        display: inline-block;
+    }
+    
+    .dropbtn {
+        background-color: #2890f0;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #4c515b;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        max-width: 110px;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #111}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #0d66ba;
+    }
+    
+    .float-right {
+        float: right;
+        padding-right: 4px;
+        margin-top: 5px;
+    }
+    
+    .headerDesktop {
+        margin: auto;
+        max-width: 900px;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .headerBotao {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 19px 16px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .headerBotao:hover {
+        background-color: #333;
+    }
+    
+    
+    
+    
+    
+    input#busca {
+        box-sizing: border-box; 
+        border-width: 1px;
+        border-style: solid;
+        padding-left: 10px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 16px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 85%;       
+    }
+    
+    button#submitBusca {
+        vertical-align: top;
+        height: 40px;
+        cursor: pointer;
+        border-width: 0px;
+        color: black;
+        background-color: #dde2e3;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .headerDesktop {
+        padding: 0;
+    }
+}
