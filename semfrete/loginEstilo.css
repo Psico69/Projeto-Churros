@@ -1,24 +1,40 @@
 @charset "UTF-8";
 @media only screen and (min-width: 940px) {
     body {
-        background: #f6f6f6;
         font-family: 'Open Sans', sans-serif;
         margin: 0;
         width: calc(100vw - 17px);
+        background-color: #ececec;
+
     }
+
+    .logo {
+        position: absolute;
+        display: block;
+        top: 30%;
+        left: 30%;
+        margin-top: -230px; /* Half the height */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     
     .esqueceuSenha {
-        margin: 12px;
+        margin: 130px;
         color: #111;
         text-decoration: none;
+        display: inline;
+
     }
+
     
     .login {
+        background-color: #ececec;
         width: 450px;
         margin: 16px auto;
         font-size: 16px;
         position: relative;
-        top: 150px;
+        top: 100px;
     }
     
     /* Reset top and bottom margins from certain elements */
@@ -27,6 +43,15 @@
         margin-top: 0;
         margin-bottom: 0;
     }
+
+    .bemVindo div {
+        width: 100%;
+        text-align: center;
+        color: #2196F3;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: normal;
+    }
     
     /* The triangle form is achieved by a CSS hack */
     .login-triangle {
@@ -34,11 +59,11 @@
         margin-right: auto;
         margin-left: auto;
         border: 12px solid transparent;
-        border-bottom-color: #211D12;
+        border-bottom-color: #2196F3;
     }
     
     .login-header {
-        background: #211D12;
+        background: #2196F3;
         padding: 20px;
         font-size: 1.4em;
         font-weight: normal;
@@ -52,7 +77,7 @@
         padding: 12px;
         margin-bottom: 70px;
         border: 2px solid;
-        border-color: #211D12;
+        border-color: #2196F3;
     }
     
     /* Every row inside .login-container is defined with p tags */
@@ -84,7 +109,7 @@
     }
     
     .login input[type="submit"] {
-        background: #211D12;
+        background: #2196F3;
         border-color: transparent;
         color: #fff;
         cursor: pointer;
@@ -1542,7 +1567,7 @@
     }
      
     .login input[type="submit"] {
-        background: #211D12;
+        background: #2196F3;
         border-color: transparent;
         color: #fff;
         cursor: pointer;
@@ -1574,10 +1599,6 @@
         color: #111;
         text-decoration: none;
     }
-    
-    
-    
-    
     
     #headerParent{
         display: flex;

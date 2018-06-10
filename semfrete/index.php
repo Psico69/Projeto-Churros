@@ -302,13 +302,17 @@
         } else {
             // Interface antes de logar
             echo'<div class="login">
+                     <img alt="logo" src="icone.png" class="logo">
                      <div class="login-triangle"></div>
                      <h2 class="login-header">Nome do Condomínio</h2>
                      <form class="login-container" method="POST" action="login.php">
+                         <h1 class="bemVindo">
+                            <div name="bemVindo" type="text"="">Seja bem vindo! </div>
+                         </h1>
                          <p><input name="usuario" type="text" placeholder="Nome de usuário ou Email" required></p>
                          <p><input name="senha" type="password" placeholder="Senha" required></p>
                          <p><input name="entrar" type="submit" value="Entrar"></p>
-                         <a class="esqueceuSenha" id="esqueceuSenha" href="esqueceuSenha.php">Esqueceu a senha?</a>
+                         <p><a class="esqueceuSenha" id="esqueceuSenha" href="esqueceuSenha.php">Esqueceu a senha?</a></p>
                      </form>
                      <textarea id="erro" name="erro" class="erroLogin" cols="200" rows="2" disabled hidden></textarea>
                 </div>';
